@@ -3,9 +3,36 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>lolipop</title>
 </head>
 <body>
-	<a href="index.php"><button>Start</button></a>
+	<img src="loli1.jpg" id = "img" width="1024" height="576">
+	<div id = "counter">
+		lolipop counter: 0
+	</div>
+	<script type="text/javascript">
+		var audio = new Audio('pop.mp3');
+		var counter = 0;
+		window.addEventListener('mousedown', function(){
+			document.getElementById("img").src = "loli2.jpg";
+			counter++
+			document.getElementById("counter").innerHTML = "lolipop counter: " + counter;
+			audio.play();
+		})
+		window.addEventListener('mouseup', function(){
+			document.getElementById("img").src = "loli1.jpg";
+		})
+		window.addEventListener('keydown', function(){
+			audio.play();
+			counter++
+			document.getElementById("img").src = "loli2.jpg";
+			document.getElementById("counter").innerHTML = "lolipop counter: " + counter;
+		})
+		window.addEventListener('keyup', function(){
+			document.getElementById("img").src = "loli1.jpg";
+		})
+
+	</script>
+	
 </body>
 </html>
