@@ -11,23 +11,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>智慧冰箱</h1>
-        <form action = "index.php" method="post">
-            <div class="row">
-                <div class="col-6">
-                    <select class="form-select form-select-m" aria-label=".form-select-lg example" name="method">
-                        <option selected value = "0">放入食物</option>
-                        <option value="1">拿出食物</option>
-                        <option value="2">修改數量/保存期限</option>   
-                    </select>
-                </div>
-                <div class="col-6">
-                    <select class="form-select form-select-m mb-1" aria-label=".form-select-lg example" name = "ingredient_id">
-                    </select>
-                </div>
-            </div>
+        <h1>病例</h1>
+        <form action="/action_page.php">
+            <label for="doctor_id">醫生編號:</label>
+            <input type="text" id="doctor_id" name="doctor_id"><br><br>
+            <label for="patient_id">病患編號:</label>
+            <input type="text" id="patient_id" name="patient_id"><br><br>
+            <input type="submit" value="Submit">
         </form>
-        
+        <textarea id="bingli" name="bingli" rows="4" cols="50"></textarea>
         <h3>
             冰箱裡現在有：
         </h3>
