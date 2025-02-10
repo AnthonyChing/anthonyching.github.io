@@ -1,34 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Webpage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>病例</h1>
-        <form action="/action_page.php">
-            <label for="doctor_id">醫生編號:</label>
-            <input type="text" id="doctor_id" name="doctor_id"><br><br>
-            <label for="patient_id">病患編號:</label>
-            <input type="text" id="patient_id" name="patient_id"><br><br>
-        </form>
-        <h2>輸入病例</h2>
-        <textarea id="bingli" name="bingli" rows="4" cols="50"></textarea>
-        <br>
-        <h2>輸入用藥資訊</h2>
-        <textarea id="bingli" name="bingli" rows="4" cols="50"></textarea>
-        <br>
-        <a href="index.html"><button class="btn btn-primary">確認送出</button></a>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>	
+    <header>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </header>
+    <main>
+        <div class="container">
+            <section id="about">
+                <!-- About content -->
+                <h1 class="title">About</h1>
+                <p>This is the about page.</p>
+            </section>
+            <section id="experience">
+                <h1 class="title">Experience</h1>
+                <p>Here's my experience.</p>
+            </section>
+            <section id="education">
+                <h1 class="title">Education</h1>
+                <p>My educational background.</p>
+            </section>
+            <section id="projects">
+                <h1 class="title">Projects</h1>
+                <p>Check out some of my projects!</p>
+            </section>
+            <section id="skills">
+                <h1 class="title">Skills</h1>
+                <p>What I can do.</p>
+            </section>
+            <section id="contact">
+                <h1 class="title">Contact</h1>
+                <p>Get in touch with me.</p>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
