@@ -153,6 +153,7 @@ section {
     max-height: 1080px;
     background: url(./images/DSC_2589.JPG);
     background-size: cover;
+    background-position: center;
     padding: 15px;
     overflow: hidden
 }
