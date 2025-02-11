@@ -8,23 +8,36 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <ul id="menu" class="shadow">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </header>
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Anthony Ching</h1>
+            <h2>Software Engineer</h2>
+            <a href="#" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <div id="lead-overlay"></div>
+    </div>
+    
     <main>
         <div class="container">
             <section id="about">
                 <!-- About content -->
-                <h1 class="title">About</h1>
-                <p>This is the about page.</p>
+                <h1 class="title">About Me</h1>
+                <div id="intro">
+                    <img src="./images/toyosu.jpg" id="toyosu">
+                    <p>
+                    I am a student studying in the department of Computer Science and Information Engineering in National Taiwan University.
+                    I have intern experience and specialize in Machine Learning and Large Language Models.
+                    I am a nice and friendly person who likes to help friends and classmates on schoolwork, which I believe in turn contributes to an active learning process for myself!</p>
+                </div>
             </section>
             <section id="experience">
                 <h1 class="title">Experience</h1>
@@ -37,6 +50,7 @@
             <section id="projects">
                 <h1 class="title">Projects</h1>
                 <p>Check out some of my projects!</p>
+                <a href="projects/1.html">Project 1</a>
             </section>
             <section id="skills">
                 <h1 class="title">Skills</h1>
