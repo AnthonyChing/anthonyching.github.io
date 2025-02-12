@@ -8,7 +8,8 @@
 </head>
 <body>
     <header>
-        <ul id="menu" class="shadow">
+        <button id="toggleMenu">☰ Menu</button>
+        <ul id="menu">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
@@ -21,7 +22,7 @@
         <div id="lead-content">
             <h1>Anthony Ching</h1>
             <h2>Software Engineer</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
+            <a href="https://github.com/anthonyching" class="btn-rounded-white">Check out my GitHub</a>
         </div>
         <div id="lead-overlay"></div>
     </div>
@@ -34,33 +35,55 @@
                 <div id="intro">
                     <img src="./images/toyosu-crop.jpg" id="toyosu">
                     <p>
-                    I am a student studying in the department of Computer Science and Information Engineering in National Taiwan University.
-                    I have intern experience and specialize in Machine Learning and Large Language Models.
-                    I am a nice and friendly person who likes to help friends and classmates on schoolwork, which I believe in turn contributes to an active learning process for myself!</p>
+                        I am Anthony Ching, 金哲安, a student studying in the department of Computer Science and Information Engineering in National Taiwan University.<br><br>
+                        I have intern experience and specialize in Machine Learning and Large Language Models.<br><br>
+                        I am a nice and friendly person who likes to help friends and classmates on schoolwork, which I believe in turn contributes to an active learning process for myself!
+                    </p>
                 </div>
             </section>
             <section id="experience">
                 <h1 class="title">Experience</h1>
-                <p>Here's my experience.</p>
+                <p>
+                    (Ongoing) Internship: MediaTek Research (2025)<br><br>
+                    Internship: Sauper Associates Inc. (2024)
+                </p>
             </section>
             <section id="education">
                 <h1 class="title">Education</h1>
-                <p>My educational background.</p>
+                <p>
+                    (Ongoing) National Taiwan University, Department of Computer Science and Information Engineering (國立台灣大學 資訊工程學系) (2023~2027)<br><br>
+                    Taipei Municipal Jianguo High School, Mathematically and Scientifically Gifted Class (台北市立建國高級中學 數理資優班) (2020~2023)
+                </p>
             </section>
             <section id="projects">
                 <h1 class="title">Projects</h1>
                 <p>Check out some of my projects!</p>
-                <a href="projects/1.html">Project 1</a>
+                <a href="projects/1.html">Machine Learning Final Project: HTMLB</a><br><br>
+                <a href="projects/1.html">Solar Energy Prediction Competition</a><br><br>
+                <a href="projects/1.html">Locker Decoration</a><br><br>
+                <a href="projects/1.html">AC Light</a><br><br>
+                <a href="projects/1.html">Line ChatBot: ClinAI</a><br><br>
+                <a href="projects/1.html">Tetris Battle</a><br><br>
+                <a href="projects/1.html">Smart Refrigerator</a>
             </section>
             <section id="skills">
                 <h1 class="title">Skills</h1>
-                <p>What I can do.</p>
+                <p>C, Python, Machine Learning, Mechanical Design</p>
             </section>
             <section id="contact">
                 <h1 class="title">Contact</h1>
-                <p>Get in touch with me.</p>
+                <p>
+                    Get in touch with me.<br><br>
+                    Email: aching517@gmail.com
+                </p>
             </section>
         </div>
     </main>
 </body>
+<script>
+    document.getElementById("toggleMenu").addEventListener("click", function () {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+    });
+</script>
 </html>
